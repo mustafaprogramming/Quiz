@@ -6,7 +6,7 @@ console.log(chalk.greenBright(`\t<==!~~ +*:-+- o({> ${chalk.blueBright.bold(` We
 console.log(chalk.greenBright(`\t   ‾-∨+-∨+      ------     === o o 0 o o ===     ------      +∨-+∨-‾\n\n\n`));
 //different type of answers depending upon choice
 let answerQuizTypescript = ["Static Typing", "Dynamic", "Readonly", "Function myFunc(): void", "Both 1 and 2", "To describe the shape of an object", "A type that can be one of several types", "Type guard", "--strict", "function  foo(param?: string)", "tsc example.ts", "let variable: string | null;", "To indicate a function always throws an exception or never returns.", "{ [key: string]: any; }", "npm install -g typescript"];
-let answerQuizIQTest = ["13", "YES", "Hand", "Even", "15", "1.45", "6", "1", "sea", "36", "Some Pets are playful", "4", "Barcelona", "9", "Peru"];
+let answerQuizIQTest = ["13", "NO", "Hand", "Even", "15", "1.45", "6", "1", "sea", "36", "Some Pets are playful", "4", "Barcelona", "9", "Peru"];
 let answerQuizGeneralKnowleadge = ["Red", "Peregrine Falcon", "Angel Falls, Venezuela", "Mars", "Carbon", "Honey", "The Sumerians", "Around 50,000", "Ottawa", "To house the tombs of pharaohs", "Brown", "13", "5", "He", "Pack"];
 let questions;
 let questionNumber = 15;
@@ -166,8 +166,8 @@ async function main() {
     }
     else if (Quiz.type === choices[1]) {
         questions = [
-            { question: "What is the Missing Number?", options: ["5", "9", answerQuizIQTest[0], "17"] },
-            { question: "If Ken is taller than Mike and Mike is taller than Dave,is Dave taller than Ken?", options: ["NO", answerQuizIQTest[1]] },
+            { question: "What is the Missing Number? 7,10,?,16", options: ["5", "9", answerQuizIQTest[0], "17"] },
+            { question: "If Ken is taller than Mike and Mike is taller than Dave,is Dave taller than Ken?", options: ["YES", answerQuizIQTest[1]] },
             { question: "A Leaf is to a branch as a Finger is to a?", options: ["Arm", "Nail", "Elbow", answerQuizIQTest[2]] },
             { question: "Is the sum of all the Odd number | 3 8 7 10 11 13 56 | Even or Odd?", options: ["Odd", answerQuizIQTest[3]] },
             { question: "Value of x in equation 3x = 15y - 10x", options: ["13", answerQuizIQTest[4], "17", "19"] },
@@ -175,7 +175,7 @@ async function main() {
             { question: "If you were six years old what would be your age now?", options: ["0", answerQuizIQTest[6], "12", "Idk"] },
             { question: "What is the Factorial of 0?", options: [answerQuizIQTest[7], "0", "-1", "-2"] },
             { question: "Desert is to oasis as ocean is to:", options: ["water", "sand", answerQuizIQTest[8], "land"] },
-            { question: "Which number follows? 1, 4, 9, 16, 25", options: ["27", answerQuizIQTest[9], "34", "45"] },
+            { question: "Which number follows? 1, 4, 9, 16, 25", options: ["27", "34", answerQuizIQTest[9], "45"] },
             { question: "Choose the conclusion that validly follows from the argument:All kittens are playful.Some pets are kittens.Therefore:", options: ["All kittens are Pets", "All Pets are playful", "All kittens are pets", answerQuizIQTest[10]] },
             { question: "You are building an open-ended (straight) fence by stringing wire between posts 25 meters apart. If the fence is 100 meters long how many posts should you use?", options: [answerQuizIQTest[11], "5", "6", "8"] },
             { question: "Real Madrid is first in the league, and Real Betis is fifth while Osasuna is right between them. If Barcelona has more points than Celta Vigo and Celta Vigo is exactly below Osasuna, who is second?", options: ["Osasuna", "Celta Vigo", "Real Betis", answerQuizIQTest[12]] },

@@ -1,4 +1,4 @@
-#! ./usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 console.log(chalk.greenBright(`\n\n\t   _-^+-^+      ------     === o o 0 o o ===     ------      +^-+^-_`));

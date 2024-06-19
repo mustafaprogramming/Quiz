@@ -14,7 +14,7 @@ type questionObject={
     options:string[];
 }
 let questions:questionObject[];
-let questionNumber:number=15;
+let questionNumber:number;
 // score variable
 let score:number;
 // Type of Quizes
@@ -113,6 +113,7 @@ async function Continuation(){
     }
 };
 async function main(){
+    questionNumber=15;
     let answerSheet:string[]=[];
     let Quiz = await inquirer.prompt([
         {

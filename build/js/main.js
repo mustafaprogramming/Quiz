@@ -9,7 +9,7 @@ let answerQuizTypescript = ["Static Typing", "Dynamic", "Readonly", "Function my
 let answerQuizIQTest = ["13", "NO", "Hand", "Even", "15", "1.45", "6", "1", "sea", "36", "Some Pets are playful", "4", "Barcelona", "9", "Peru"];
 let answerQuizGeneralKnowleadge = ["Red", "Peregrine Falcon", "Angel Falls, Venezuela", "Mars", "Carbon", "Honey", "The Sumerians", "Around 50,000", "Ottawa", "To house the tombs of pharaohs", "Brown", "13", "5", "He", "Pack"];
 let questions;
-let questionNumber = 15;
+let questionNumber;
 // score variable
 let score;
 // Type of Quizes
@@ -121,6 +121,7 @@ async function Continuation() {
 }
 ;
 async function main() {
+    questionNumber = 15;
     let answerSheet = [];
     let Quiz = await inquirer.prompt([
         {

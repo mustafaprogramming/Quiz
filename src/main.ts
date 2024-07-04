@@ -107,7 +107,6 @@ async function Continuation(){
     }
 };
 async function main(){
-    questionNumber=15;
     let Quiz = await inquirer.prompt([
         {
             type:"list",
@@ -163,8 +162,13 @@ async function main(){
             {question:"You are building an open-ended (straight) fence by stringing wire between posts 25 meters apart. If the fence is 100 meters long how many posts should you use?",options: ["4","5","6","8"],answer: "4"},
             {question:"Real Madrid is first in the league, and Real Betis is fifth while Osasuna is right between them. If Barcelona has more points than Celta Vigo and Celta Vigo is exactly below Osasuna, who is second?",options:["Osasuna","Celta Vigo","Real Betis","Barcelona"],answer: "Barcelona"},
             {question:"Zeta Leonis is both the fifth smallest and fifth largest star in a constellation.How many stars are there?",options:["8","9","10","11"],answer: "9"},
+            {question:"Aztecs is to Mexico as Incas is to:",options:["Cuba","Peru","Chile","Brazil"],answer: "Peru"},{question:"Choose the conclusion that validly follows from the argument:All kittens are playful.Some pets are kittens.Therefore:",options:["All kittens are Pets","All Pets are playful","All kittens are pets","Some Pets are playful"],answer: "Some Pets are playful"},
+            {question:"You are building an open-ended (straight) fence by stringing wire between posts 25 meters apart. If the fence is 100 meters long how many posts should you use?",options: ["4","5","6","8"],answer: "4"},
+            {question:"Real Madrid is first in the league, and Real Betis is fifth while Osasuna is right between them. If Barcelona has more points than Celta Vigo and Celta Vigo is exactly below Osasuna, who is second?",options:["Osasuna","Celta Vigo","Real Betis","Barcelona"],answer: "Barcelona"},
+            {question:"Zeta Leonis is both the fifth smallest and fifth largest star in a constellation.How many stars are there?",options:["8","9","10","11"],answer: "9"},
             {question:"Aztecs is to Mexico as Incas is to:",options:["Cuba","Peru","Chile","Brazil"],answer: "Peru"},
         ];
+        questionNumber=questions.length;
         answer=await Quiz_IQTest();
     }else if(Quiz.type===choices[2]){
         questions=[
